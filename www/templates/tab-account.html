@@ -1,0 +1,17 @@
+<ion-view view-title="Account">
+  <ion-content padding="true">
+    <ion-list>
+        <ion-item class="item item-avatar">
+          <img ng-src="{{ user.details.image }}">
+          <h2>{{ user.details.name }}</h2>
+          <p>{{ user.details.email }}</p>
+        </ion-item>
+    </ion-list>
+    <button ng-click="logout();" class="button button-full">
+        Reset password
+    </button>
+    <button ng-click="logout();" class="button button-full button-assertive">
+        Sign out
+    </button>
+  </ion-content>
+</ion-view>

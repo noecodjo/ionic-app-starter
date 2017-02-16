@@ -1,0 +1,26 @@
+<ion-view view-title="Signup">
+  <ion-content padding="true">
+      <form ng-submit="signup();">
+        <div class="list">
+          <label class="item item-input item-floating-label">
+            <span class="input-label">E-mail</span>
+            <input type="email" placeholder="E-mail" ng-model="data.email">
+          </label>
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Password</span>
+            <input type="password" placeholder="Password" ng-model="data.password">
+          </label>
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Name</span>
+            <input type="text" placeholder="Name" ng-model="data.name">
+          </label>
+        </div>
+        <button type="submit" class="button button-positive button-full">
+          Sign up
+        </button>  
+        <button ui-sref="login" type="submit" class="button button-full">
+          Login
+        </button>  
+      </form>  
+  </ion-content>
+</ion-view>
